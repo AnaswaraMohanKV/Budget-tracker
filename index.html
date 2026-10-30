@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Monthly Budget</title>
+<meta name="theme-color" content="#1F5C57">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Budget">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIk1vbnRobHkgQnVkZ2V0IiwgInNob3J0X25hbWUiOiAiQnVkZ2V0IiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNGMkY0RjEiLCAidGhlbWVfY29sb3IiOiAiIzFGNUM1NyIsICJzdGFydF91cmwiOiAiLiIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQWdBQUFBSUFDQVlBQUFEMGVOVDZBQUFTc1VsRVFWUjRuTzNkUFk0Y1o1S0E0U1NoWXl4QVd4QUdjdzg1NHkwTjBSN01HcnJGM2tET1l1MXhSdlpDRjFrc1pBOGd6Q2tFY1kxV1U4Vm1WWFZtNWZjVDhjWHpBUEpvWkdkM1pid1ptZDE2c3hIU3V3L3ZQODQrQm9BVy92bjNmN3laZlF4OHlUZGxFZ01lNElsQW1NTkpIOEN3QnpoR0ZQVG5CSGRnNEFPMEpRamFjMEliTVBBQnhoSUU1em1CRHpMMEFXSVFBNDl4MGc0dzlBRmlFd1A3T1ZHdk1QUUJjaElEOXprNU54ajhBR3NRQXRjNUtSY01mWUMxaVlFL09CR2J3UTlRalJBb0hnQUdQMEJ0bFVPZzVCZHU4QU53cVdJSWxQcUNEWDRBN3FrVUFpVytVSU1mZ0NNcWhNRGIyUWZRbStFUHdGRVZac2V5aFZQaG13ZEFmNnR1QTViN29neCtBSHBZTFFTV2VnUmcrQVBReTJvelpvbWFXZTJiQWtCc0syd0QwbThBREg4QVJsdGg5cVFPZ0JXK0FRRGtsSDBHcFZ4aFpEL3BBS3dsNHlPQmRCc0F3eCtBYURMT3BsUUJrUEVFQTFCRHRobVZZbVdSN2FRQ1VGdUdSd0xoTndDR1B3RFpaSmhkb1FNZ3d3a0VnR3VpejdDd0FSRDl4QUhBYXlMUHNwQUJFUG1FQWNBUlVXZGF1QUNJZXFJQTRGRVJaMXVvQUloNGdnQ2doV2d6TGt3QVJEc3hBTkJhcEZrWElnQWluUkFBNkNuS3pKc2VBRkZPQkFDTUVtSDJUUTJBQ0NjQUFHYVlQUU9uQmNEc0x4d0FacHM1QzZjRWdPRVBBRTltemNUaEFXRDRBOERuWnN6R29RRmcrQVBBZGFObjVMQUFNUHdCNEw2UnMzSklBQmorQUxEUHFKazUvZThBQUFEamRROEFkLzhBY015STJkazFBQXgvQUhoTTd4bmFMUUFNZndBNHArY3M5UTRBQUJUVUpRRGMvUU5BRzcxbWF2TUFNUHdCb0swZXM3VnBBQmorQU5CSDZ4bnJIUUFBS0toWkFMajdCNEMrV3M3YUpnRmcrQVBBR0sxbXJrY0FBRkRRNlFCdzl3OEFZN1dZdlRZQUFGRFFxUUJ3OXc4QWM1eWR3UThIZ09FUEFIT2RtY1VlQVFCQVFROEZnTHQvQUlqaDBabHNBd0FBQlIwT0FIZi9BQkRMSTdQWkJnQUFDam9VQU83K0FTQ21velBhQmdBQUN0b2RBTzcrQVNDMkk3UGFCZ0FBQ3RvVkFPNytBU0NIdlRQYkJnQUFDaElBQUZEUXF3RmcvUThBdWV5WjNUWUFBRkRRM1FCdzl3OEFPYjAydzIwQUFLQWdBUUFBQmQwTUFPdC9BTWp0M2l5M0FRQ0FnZ1FBQUJSME5RQ3Mvd0ZnRGJkbXVnMEFBQlFrQUFDZ29DOEN3UG9mQU5aeWJiYmJBQUJBUVFJQUFBb1NBQUJRMEdjQjRQay9BS3pwNVl5M0FRQ0FnZ1FBQUJRa0FBQ2dvRThCNFBrL0FLenRjdGJiQUFCQVFRSUFBQW9TQUFCUWtBQUFnSUxlYnBzWEFBR2dpdWVaYndNQUFBVUpBQUFvU0FBQVFFRUNBQUFLRWdBQVVKQUFBSUNDQkFBQUZQVEczd0NBZGZ6bHovODY5Ty8vOHovKzU5Qy8vOVBmL25ybzN3TnhmVFg3QUlCOWpnNzNIdjczdi83NzFYOGpFaUFIQVFDQlJCanlaOTJMQkhFQWNRZ0FtR1NGWVgvVXRUZ1FCVENIQUlCQktnNzhQVjVHZ1NDQU1RUUFkR0xnUDBZUXdCZ0NBQm95OU51N0RBSXhBTzBJQURqSjBCOUhERUE3QWdBZVlPalBKd2JnSEFFQU94bjZjWWtCT0U0QXdCMkdmajVpQVBZUkFIQ0Z3YitHNXhnUUF2QWxBUUMvTS9UWFpTc0FYeElBbEdmdzEySXJBRThFQUdVWi9MVUpBYW9UQUpSajhITkpDRkNWQUtBTWc1OTdoQURWQ0FDV1ovQnpoQkNnQ2dIQXNneCt6aEFDckU0QXNCeURuNWFFQUtzU0FDekQ0S2NuSWNCcTNzNCtBR2pCOEdlVXl6OHFCSm5aQUpDYXdjOE10Z0dzUUFDUWtzRlBCRUtBekR3Q0lCM0RuMmc4RmlBakd3RFNNUGlKekRhQWJHd0FTTUh3Snd2YkFMS3dBU0EwZzUrTWJBUEl3QWFBc0F4L3NyTU5JRElCUUVpR1A2c1FBVVRsRVFDaEdQeXN5Q01CSXJJQklBekRuOVhaQmhDSkFDQUV3NThxUkFCUmVBVEFWQVkvRlhra1FBUTJBRXhqK0ZPZGJRQXpDUUNtTVB6aGlRaGdGZ0hBY0lZL2ZFNEVNSU4zQUJqRzRJZmJ2QmZBYURZQURHSDR3ejYyQVl3aUFPak84SWRqUkFBakNBQzZNdnpoTVNLQTNnUUEzUmorY0k0SW9DY0JRQmVHUDdRaEF1aEZBTkNjNFE5dGlRQjZFQUEwWmZoREh5S0ExZ1FBelJqKzBKY0lvQ1VCUUJPR1A0d2hBbWhGQUhDYTRROWppUUJhRUFDY1l2akRIQ0tBc3dRQUR6UDhZUzRSd0JrQ2dJY1kvaENEQ09CUkFvRERESCtJUlFUd0NBSEFJWVkveENRQ09Fb0FzSnZoRDdHSkFJNFFBQUJRa0FCZ0YzZi9rSU10QUhzSkFGNWwrRU11SW9BOUJBQjNHZjZRa3dqZ05RS0Ftd3gveUUwRWNJOEFBSUNDQkFCWHVmdUhOZGdDY0lzQTRBdUdQNnhGQkhDTkFPQXpoaitzU1FUd2tnQUFnSUlFQUorNCs0ZTEyUUp3U1FDd2JadmhEMVdJQUo0SkFBeC9LRVlFc0cwQ0FBQktFZ0RGdWZ1SG1td0JFQUNGR2Y1UW13aW9UUUFBUUVFQ29DaDMvOEMyMlFKVUpnQUtNdnlCU3lLZ0pnRUFBQVVKZ0dMYy9RUFgyQUxVSXdBQW9DQUJVSWk3ZitBZVc0QmFCRUFSaGord2h3aW9Rd0FBUUVFQ29BQjMvOEFSdGdBMUNBQUFLRWdBTE03ZFAvQUlXNEQxQ1FBQUtFZ0FMTXpkUDNDR0xjRGFCQUFBRkNRQUZ1WHVIMmpCRm1CZEFnQUFDaElBQzNMM0Q3UmtDN0FtQVFBQUJRbUF4Ymo3QjNxd0JWaVBBQUNBZ2dUQVF0ejlBejNaQXF4RkFBQkFRUUpnRWU3K2dSRnNBZFloQUFDZ0lBRUFBQVVKZ0FWWS93TWplUXl3QmdFQUFBVUpnT1RjL1FNejJBTGtKd0FBb0NBQkFBQUZDWURFclArQm1Ud0d5RTBBQUVCQkFnQUFDaElBU1ZuL0F4RjRESkNYQUFDQWdnUUFBQlFrQUJLeS9nY2k4UmdnSndFQUFBVUpBQUFvU0FBa1kvMFBST1F4UUQ0Q0FBQUtFZ0FBVUpBQVNNVDZINGpNWTRCY0JBQUFGQ1FBQUtBZ0FRQUFCUW1BSkR6L0J6THdIa0FlQWdBQUNoSUFBRkNRQUFDQWdnUkFBcDcvQTVsNER5QUhBUUFBQlFrQUFDaElBQUJBUVFJQUFBb1NBTUY1QVJESXlJdUE4UWtBQUNoSUFBQkFRUUlBQUFvU0FBQlFrQUFBZ0lJRUFBQVVKQUFDOHl1QVFHWitGVEEyQVFBQUJRa0FBQ2hJQUFCQVFRSUFBQW9TQUFCUWtBQUFnSUlFQUFBVUpBQUFvQ0FCRUpRL0FnU3N3QjhEaWtzQUFFQkJBZ0FBQ2hJQUFGQ1FBQUNBZ2dRQUFCUWtBQUNnSUFFQUFBVUpBQUFvU0FBQVFFRUNBQUFLRWdBQVVKQUFnR0srKy9XM1QvLzkvTU8zc3c4SG1PU3IyUWNBOVBQZHI3KzkrbTkrL3VIYjdldnZmeHB3TkVBa0FnQVdzR2ZRM3lNQ29CNEJBSW1jSGZUM2lBQ29SUUJBVUQySC9TM1A3d1FJQVZpZkFJREpaZ3o2MTlnR3dQb0VBQXdTY2REZkl3SmdiUUlBT3NnMjdHOFJBYkF1QVFBbnJETG83eEVCc0NZQkFEdFVHUFQzZURrUTFpTUE0SVhxdy80ZTJ3Qllod0NnTElQK01TSUExdkRtM1lmM0gyY2ZCTmY5NWMvL21uMElTekRvK3hBQjdQR252LzExOWlGd2d3MEFTekhzeDdFSmdOd0VBQ2taOURGNE9SRHlFZ0NFWnREbllCc0ErUWdBd2pEc2N4TUJrSXNBWURpRGZsMGlBUElRQUhSajBOY2tBaUFIQVVBVGhqMlhSQURFSndBNHhLQm5MNzhoQUxINVEwREJ6ZnBqUUFZOUxZbUFtdndSb05oc0FERHM2YzRqQVloSEFCUmkwRE9UQ0lCWUJNQ0NESHFpRWdFUWh3Qkl6ckFuR3k4SFFnd0NJQW1EbnRYWUJzQmNiMmNmQVBkOTkrdHZoai9MZXQ0R0FPTUpnT0QrL2YvK2JmWWhRRmNpWUUxK0JUQStBUUJNSndKZ1BBRUFoUER6RDk4S0FSaElBQUNoaUFBWVF3QUE0WWdBNkU4QUpPQkZRQ29TQVhsNUFUQUhBUUNFSlFLZ0h3RUFoT2JsUU9oREFBQXBpQUJvU3dBazRUMEFFQUVaZVA2Zmh3QUFVaEVCMElZQUFOSVJBWENlQUFCUzhuSWduQ01BRXZFZUFIeEpCTVRoK1g4dUFnQklUd1RBY1FJQVdJSUlnR01FUURJZUE4QnRJbUFlNi85OEJBQ3dGQkVBK3dnQVlEbCtRd0JlSndBUzhoZ0E5aEVCWTFqLzV5UUFnS1dKQUxoT0FBRExFd0h3SlFHUWxNY0FjSXdJNk1QNlB5OEJBSlRoNVVENGd3QUF5aEVCSUFCUzh4Z0FIaWNDenJQK3owMEFBR1dKQUNvVEFFQnBJb0NxM3J6NzhQN2o3SVBnbkIrLytXWDJJY0FTdnY3K3A5bUhrSWIxZjM0MkFBQy9zdzJnRWdHd0FDOERRanNpNEhYdS90Y2dBQUJlRUFGVUlBQUFyaEFCck01TGdBdnhNaUQwNGVYQVAxai9yOE1HQU9BVnRnR3NTQUFzeE11QTBJOEljUGUvR2dFQXNKTUlZQ1VDWURHMkFOQlgxUWh3OTc4ZUFRQndrUCt0TUNzUUFBdXlCWUF4cWtTQXUvODFDUUNBRTZwRUFPc1JBSXV5QllCeFZvNEFkLy9yRWdBQURhd2NBYXhKQUN6TUZnREdXaTBDM1AydlRRQUFOT1EzQk1oQ0FDek9GZ0RteUI0Qjd2N1hKd0FBT3NrZUFheE5BQlJnQ3dEelpJd0FkLzgxQ0FDQXpqSkdBT3Q3OCs3RCs0K3pENEl4ZnZ6bWw5bUhBT1Y5L2YxUHN3L2hMbmYvZGRnQUZPSlJBTXdYZVJ0ZytOY2lBQUFHaXh3QjFDRUFpckVGZ0JpaVJZQzcvM29FQU1BazBTS0FXcndFV0pRWEFpR1dtUzhIdXZ1dnlRYWdLSThDSUpaWjJ3RER2eTRCQUJDRVJ3S01KQUFLc3dXQWVFWkdnTHYvMmdSQWNTSUE0aGtSQVlZL0FnQWdJUDliWVhvVEFOZ0NRR0E5SXNEZFA5c21BUGlkQ0lDNFdrYUE0Yzh6QWNBbklnRGlhaEVCaGorWEJBQkFFdDRKb0NVQndHZHNBU0MyUnlQQTNUOHYrVlBBWE9WUEJVTjhlLzk4c09IUE5UWUFYR1VUQVBIdDJRWVkvdHdpQUFBUzgxNEFqeElBM0dRTEFEbmNpZ0IzLzl3akFMaExCRUFPTHlQQThPYzFYZ0prRnk4RlFoN0NuVDFzQU5qRkJRVnk4RmxsTHdFQUFBVUpBSFp6WndHeCtZeHloQURnRUJjWWlNbG5rNk1FQUllNTBFQXNQcE04UWdEd0VCY2NpTUZua1VjSkFCN213Z056K1F4eWhnRGdGQmNnbU1Obmo3TUVBS2U1RU1GWVBuTzBJQUJvd2dVSnh2QlpveFVCUURNdVROQ1h6eGd0Q1FDYWNvR0NQbnkyYUUwQTBKd0xGYlRsTTBVUEFvQXVYTENnRFo4bGVoRUFkT1BDQmVmNEROR1RBS0FyRnpCNGpNOE92UWtBdW5NaGcyTjhaaGhCQURDRUN4cnM0N1BDS0YvTlBnRHFlTDZ3L2ZqTkw1T1BCT0l4K0JuTkJvRGhYT2pnY3o0VHpDQUFtTUlGRDU3NExEQ0xBR0FhRno2cTh4bGdKdThBTUpYM0Fxakk0Q2NDR3dCQ2NFR2tDai9yUkNFQUNNT0ZrZFg1R1NjU2p3QUl4U01CVm1Ud0U1RU5BQ0c1WUxJS1A4dEVKUUFJeTRXVDdQd01FNWxIQUlUbWtRQVpHZnhrWUFOQUNpNm9aT0ZubFN4c0FFakROb0RJREg2eXNRRWdIUmRhb3ZFelNVWTJBS1JrRzBBRUJqK1pDUUJTRXdMTVlQQ3pBbzhBV0lJTE1xUDRXV01WTmdBc3d6YUFuZ3grVmlNQVdJNFFvQ1dEbjFVSkFKWWxCRGpENEdkMUFvRGxDUUdPTVBpcFFnQlFoaERnSG9PZmFnUUE1UWdCTGhuOFZDVUFLRXNJMUdid1U1MEFvRHdoVUl2QkQwOEVBUHp1Y2pDSWdiVVkrdkFsQVFCWDJBcXN3ZUNIMndRQTNHRXJrSStoRC9zSUFOaEpETVJsNk1OeEFnQWVJQWJtTS9UaEhBRUFKNG1CY1F4OWFFY0FRRU5pb0QxREgvb1FBTkRKeThFbENQWXg4R0VNQVFDRENJTHJESHlZUXdEQUpOY0czK3BSWU5oREhBSUFBcmszSUxQRWdTRVBPUWdBU0dMUFlPMGRDWVk3ck9QTnRtM2J1dy92UDg0K0VBQmdqSC8rL1I5djNzNCtDQUJnUEFFQUFBVUpBQUFvU0FBQVFFRUNBQUFLRWdBQVVKQUFBSUNDM203YjArOER6ajRRQUtDLzU1bHZBd0FBQlFrQUFDaElBQUJBUVFJQUFBcjZGQUJlQkFTQXRWM09laHNBQUNoSUFBQkFRUUlBQUFyNkxBQzhCd0FBYTNvNTQyMEFBS0FnQVFBQUJRa0FBQ2pvaXdEd0hnQUFyT1hhYkxjQkFJQ0NCQUFBRkhRMUFEd0dBSUExM0pycE5nQUFVSkFBQUlDQ2JnYUF4d0FBa051OVdXNERBQUFGQ1FBQUtPaHVBSGdNQUFBNXZUYkRiUUFBb0tCWEE4QVdBQUJ5MlRPN2JRQUFvQ0FCQUFBRjdRb0Fqd0VBSUllOU05c0dBQUFLMmgwQXRnQUFFTnVSV1cwREFBQUZIUW9BV3dBQWlPbm9qTFlCQUlDQ0RnZUFMUUFBeFBMSWJMWUJBSUNDSGdvQVd3QUFpT0hSbVd3REFBQUZQUndBdGdBQU1OZVpXWHhxQXlBQ0FHQ09zelBZSXdBQUtPaDBBTmdDQU1CWUxXYXZEUUFBRk5Ra0FHd0JBR0NNVmpPMzJRWkFCQUJBWHkxbnJVY0FBRkJRMHdDd0JRQ0FQbHJQMk9ZYkFCRUFBRzMxbUsxZEhnR0lBQUJvbzlkTTlRNEFBQlRVTFFCc0FRRGduSjZ6dE9zR1FBUUF3R042ejlEdWp3QkVBQUFjTTJKMmVnY0FBQW9hRWdDMkFBQ3d6NmlaT1d3RElBSUE0TDZSczNMb0l3QVJBQURYalo2Unc5OEJFQUVBOExrWnMzSEtTNEFpQUFDZXpKcUowMzRMUUFRQVVOM01XVGoxMXdCRkFBQlZ6WjZCMC84T3dPd1RBQUNqUlpoOTB3TmcyMktjQ0FBWUljck1DeEVBMnhibmhBQkFMNUZtWFpnQTJMWllKd1lBV29vMjQwSUZ3TGJGTzBFQWNGYkUyUll1QUxZdDVva0NnRWRFbldraEEyRGI0cDR3QU5ncjhpd0xHd0RiRnZ2RUFjQTkwV2RZNkFEWXR2Z25FQUJleWpDN3doL2dwWGNmM24rY2ZRd0FjRXVHd2Y4cy9BYmdVcVlUQzBBdDJXWlVxZ0RZdG53bkdJRDFaWnhONlE3NGtrY0NBTXlVY2ZBL1M3Y0J1SlQ1eEFPUVcvWVpsRG9BdGkzL053Q0FmRmFZUGVtL2dFc2VDUURRMHdxRC8xbjZEY0NsbGI0eEFNU3kyb3haNm91NVpCc0FRQXVyRGY1blMzNVJsNFFBQUk5WWRmQS9XK29Sd0RXcmZ3TUJhSy9DN0ZqK0M3eGtHd0RBUFJVRy83TXlYK2dsSVFEQXBVcUQvMW01TC9pU0VBQ29yZUxnZjFiMkM3OGtCQUJxcVR6NG41VS9BWmVFQU1EYURQNC9PQkUzaUFHQU5SajYxemtwcnhBQ0FEa1ovUGM1T1FlSUFZRFlEUDM5bktnSGlRR0FHQXo5eHpocERZZ0JnTEVNL2ZPY3dBNEVBVUJiQm41N1R1Z0FnZ0RnR0FPL1B5ZDRFbEVBOE1Td244TkpEMG9nQUtzdzRHUDZmemF5bkg5RURKUFhBQUFBQUVsRlRrU3VRbUNDIiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9wbmcifV19">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<style>
+:root{
+  --bg:#F2F4F1;--surface:#FFFFFF;--ink:#1B2421;--muted:#66726D;--line:#D9DFDA;
+  --accent:#1F5C57;--danger:#A93D24;--danger-bg:#F8E4DE;
+  --caution:#7A5410;--caution-bg:#F7EBD2;--ok:#2F6B45;--ok-bg:#E1F0E5;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#121816;--surface:#1A2320;--ink:#E6ECE9;--muted:#93A29C;--line:#2C3833;
+    --accent:#6FB8AF;--danger:#F08A6C;--danger-bg:#3A221B;
+    --caution:#E9BE6A;--caution-bg:#3A2F16;--ok:#8ED0A0;--ok-bg:#1C3324;
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:24px 16px 48px}
+header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:24px}
+h1{font-family:Georgia,"Iowan Old Style",serif;font-weight:600;font-size:30px;margin:0;letter-spacing:-.01em}
+.month-nav{display:flex;gap:8px;align-items:center}
+input,select,button{font:inherit;color:inherit}
+button{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer}
+button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+input,select{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.month-nav input{width:auto}
+.grid{display:grid;grid-template-columns:320px 1fr;gap:24px;align-items:start}
+@media (max-width:820px){.grid{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:24px}
+.grid > div > .card:last-child{margin-bottom:0}
+.card h2{font-size:13px;font-weight:600;margin:0 0 12px;color:var(--muted)}
+label{display:block;font-size:13px;color:var(--muted);margin-bottom:12px}
+label input,label select{margin-top:4px;display:block}
+.budgetline{display:flex;gap:10px;align-items:flex-end}
+.budgetline label{margin:0}
+.alert{border-radius:10px;padding:14px 16px;margin-bottom:24px;font-weight:500;border:1px solid transparent}
+.alert[hidden]{display:none}
+.alert.danger{background:var(--danger-bg);color:var(--danger);border-color:var(--danger)}
+.alert.caution{background:var(--caution-bg);color:var(--caution);border-color:var(--caution)}
+.alert.ok{background:var(--ok-bg);color:var(--ok);border-color:var(--ok)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
+@media (max-width:620px){.stats{grid-template-columns:1fr}}
+.stat .l{font-size:13px;color:var(--muted)}
+.stat .v{font-family:Georgia,serif;font-size:24px;font-variant-numeric:tabular-nums}
+.stat .v.danger{color:var(--danger)}
+.meter{height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+.meter span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+.meter.over span{background:var(--danger)}
+.chart{display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:center}
+@media (max-width:620px){.chart{grid-template-columns:1fr}}
+.chart svg{width:100%;max-width:220px;height:auto;display:block}
+.legend{list-style:none;margin:0;padding:0}
+.legend li{display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.legend .name{display:flex;align-items:center}
+.legend .muted{color:var(--muted);font-size:13px;margin-left:6px}
+.sw{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:8px;flex:none}
+.list{list-style:none;padding:0;margin:0}
+.list li{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.list .meta{font-size:13px;color:var(--muted)}
+.amt{font-variant-numeric:tabular-nums;font-weight:600}
+.del{padding:4px 8px;font-size:13px;color:var(--muted)}
+.empty{color:var(--muted);font-size:14px;padding:12px 0}
+.empty[hidden]{display:none}
+.hint{font-size:13px;color:var(--muted);margin:10px 0 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Monthly budget</h1>
+    <div class="month-nav">
+      <button id="prev" aria-label="Previous month">&larr;</button>
+      <input type="month" id="month" aria-label="Month">
+      <button id="next" aria-label="Next month">&rarr;</button>
+    </div>
+  </header>
+
+  <div id="alert" class="alert" role="status" hidden></div>
+
+  <div class="grid">
+    <div>
+      <section class="card">
+        <h2>Budget for this month</h2>
+        <div class="budgetline">
+          <label style="flex:1">Total budget
+            <input type="number" id="budget" min="0" step="0.01" placeholder="0.00">
+          </label>
+          <label style="width:84px">Symbol
+            <input type="text" id="sym" value="₹" maxlength="4">
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Add expense</h2>
+        <div id="form">
+          <label>Amount
+            <input type="number" id="amount" min="0.01" step="0.01" required>
+          </label>
+          <label>Category
+            <select id="cat"></select>
+          </label>
+          <label>Note
+            <input type="text" id="note" maxlength="80" placeholder="e.g. Weekly groceries">
+          </label>
+          <label>Date
+            <input type="date" id="date" required>
+          </label>
+          <button class="primary" type="button" id="addBtn" style="width:100%">Add expense</button>
+          <p class="hint" id="addMsg" role="status"></p>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <section class="card">
+        <div class="stats">
+          <div class="stat"><div class="l">Spent</div><div class="v" id="spent">0</div></div>
+          <div class="stat"><div class="l">Remaining</div><div class="v" id="left">&mdash;</div></div>
+          <div class="stat"><div class="l">Budget used</div><div class="v" id="pct">&mdash;</div></div>
+        </div>
+        <div class="meter" id="meter"><span></span></div>
+      </section>
+
+      <section class="card">
+        <h2>Breakdown by category</h2>
+        <div class="chart">
+          <div id="pie"></div>
+          <ul class="legend" id="legend"></ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Expenses this month</h2>
+        <ul class="list" id="list"></ul>
+        <div class="empty" id="empty">No expenses yet. Add one on the left.</div>
+      </section>
+    </div>
+  </div>
+  <p class="hint">Your entries are saved on this device. Clearing browser data will erase them.</p>
+</div>
+
+<script>
+const CATS = [
+  ["Housing", "#1F5C57"], ["Food", "#C9873B"], ["Transport", "#4B6CB7"],
+  ["Utilities", "#8A5A9E"], ["Entertainment", "#6E8B3D"], ["Health", "#B5472B"],
+  ["Shopping", "#3E8E9A"], ["Other", "#8C8474"]
+];
+
+// Each month is stored under "YYYY-MM" with its own budget and expenses.
+const STORAGE_KEY = "monthly-budget-tracker-v1";
+const store = {};
+let nextId = 1;
+
+function loadSaved() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+    if (!saved) return;
+    Object.assign(store, saved.months || {});
+    if (saved.symbol) $("sym").value = saved.symbol;
+    let maxId = 0;
+    Object.values(store).forEach(m => m.expenses.forEach(e => { if (e.id > maxId) maxId = e.id; }));
+    nextId = maxId + 1;
+  } catch (err) {
+    console.error("Could not load saved budget data", err);
+  }
+}
+
+function saveData() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({ months: store, symbol: $("sym").value }));
+  } catch (err) {
+    console.error("Could not save budget data", err);
+  }
+}
+
+const $ = id => document.getElementById(id);
+const pad = n => String(n).padStart(2, "0");
+const monthKey = d => d.getFullYear() + "-" + pad(d.getMonth() + 1);
+let view = monthKey(new Date());
+const todayStr = () => { const d = new Date(); return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); };
+const data = k => store[k] || (store[k] = { budget: 0, expenses: [] });
+const money = n => $("sym").value + Number(n).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+function syncDate() {
+  const [y, m] = view.split("-").map(Number);
+  $("date").removeAttribute("min");
+  $("date").removeAttribute("max");
+  $("date").value = monthKey(new Date()) === view ? todayStr() : view + "-01";
+}
+
+function setMonth(k) {
+  view = k;
+  $("month").value = k;
+  $("budget").value = data(k).budget || "";
+  syncDate();
+  render();
+}
+
+function render() {
+  const d = data(view);
+  const spent = d.expenses.reduce((s, e) => s + e.amount, 0);
+  const b = d.budget;
+  const over = b > 0 && spent > b;
+
+  // Stats
+  $("spent").textContent = money(spent);
+  $("spent").classList.toggle("danger", over);
+  $("left").textContent = b > 0 ? money(b - spent) : "\u2014";
+  $("left").classList.toggle("danger", over);
+  $("pct").textContent = b > 0 ? Math.round(spent / b * 100) + "%" : "\u2014";
+  $("meter").classList.toggle("over", over);
+  $("meter").firstElementChild.style.width = b > 0 ? Math.min(100, spent / b * 100) + "%" : "0";
+
+  // Warning
+  const al = $("alert");
+  if (!b) {
+    al.hidden = true;
+  } else {
+    al.hidden = false;
+    if (over) {
+      al.className = "alert danger";
+      al.textContent = "Over budget by " + money(spent - b) + ". You've spent " + money(spent) + " of " + money(b) + " this month.";
+    } else if (spent >= 0.8 * b) {
+      al.className = "alert caution";
+      al.textContent = "Heads up: " + Math.round(spent / b * 100) + "% of your budget is used. " + money(b - spent) + " left.";
+    } else {
+      al.className = "alert ok";
+      al.textContent = "On track. " + money(b - spent) + " left this month.";
+    }
+  }
+
+  // Pie chart and legend
+  const totals = CATS.map(([name, color]) => ({
+    name, color,
+    value: d.expenses.filter(e => e.category === name).reduce((s, e) => s + e.amount, 0)
+  })).filter(t => t.value > 0);
+
+  const pie = $("pie");
+  const legend = $("legend");
+  legend.innerHTML = "";
+
+  if (spent === 0) {
+    pie.innerHTML = '<svg viewBox="0 0 200 200" role="img" aria-label="No expenses yet"><circle cx="100" cy="100" r="90" fill="none" stroke="var(--line)" stroke-width="20"/></svg>';
+  } else if (totals.length === 1) {
+    pie.innerHTML = '<svg viewBox="0 0 200 200" role="img" aria-label="Pie chart"><circle cx="100" cy="100" r="90" fill="' + totals[0].color + '" stroke="var(--surface)" stroke-width="2"/></svg>';
+  } else {
+    let angle = -Math.PI / 2;
+    let paths = "";
+    totals.forEach(t => {
+      const sweep = t.value / spent * Math.PI * 2;
+      const x1 = 100 + 90 * Math.cos(angle), y1 = 100 + 90 * Math.sin(angle);
+      angle += sweep;
+      const x2 = 100 + 90 * Math.cos(angle), y2 = 100 + 90 * Math.sin(angle);
+      const large = sweep > Math.PI ? 1 : 0;
+      paths += '<path d="M100 100 L' + x1.toFixed(2) + ' ' + y1.toFixed(2) + ' A90 90 0 ' + large + ' 1 ' + x2.toFixed(2) + ' ' + y2.toFixed(2) + ' Z" fill="' + t.color + '" stroke="var(--surface)" stroke-width="2"/>';
+    });
+    pie.innerHTML = '<svg viewBox="0 0 200 200" role="img" aria-label="Pie chart of spending by category">' + paths + '</svg>';
+  }
+
+  totals.forEach(t => {
+    const li = document.createElement("li");
+    const name = document.createElement("span");
+    name.className = "name";
+    const sw = document.createElement("span");
+    sw.className = "sw";
+    sw.style.background = t.color;
+    name.appendChild(sw);
+    name.appendChild(document.createTextNode(t.name));
+    const pct = document.createElement("span");
+    pct.className = "muted";
+    pct.textContent = Math.round(t.value / spent * 100) + "%";
+    name.appendChild(pct);
+    const val = document.createElement("span");
+    val.textContent = money(t.value);
+    li.appendChild(name);
+    li.appendChild(val);
+    legend.appendChild(li);
+  });
+
+  // Expense list, newest first
+  const list = $("list");
+  list.innerHTML = "";
+  const sorted = d.expenses.slice().sort((a, b) => b.date.localeCompare(a.date) || b.id - a.id);
+  sorted.forEach(e => {
+    const li = document.createElement("li");
+    const left = document.createElement("div");
+    const title = document.createElement("div");
+    title.textContent = e.note || e.category;
+    const meta = document.createElement("div");
+    meta.className = "meta";
+    meta.textContent = e.date + " \u00b7 " + e.category;
+    left.appendChild(title);
+    left.appendChild(meta);
+    const amt = document.createElement("span");
+    amt.className = "amt";
+    amt.textContent = money(e.amount);
+    const del = document.createElement("button");
+    del.className = "del";
+    del.textContent = "Remove";
+    del.setAttribute("aria-label", "Remove expense " + (e.note || e.category));
+    del.addEventListener("click", () => {
+      data(view).expenses = data(view).expenses.filter(x => x.id !== e.id);
+      render();
+    });
+    li.appendChild(left);
+    li.appendChild(amt);
+    li.appendChild(del);
+    list.appendChild(li);
+  });
+  $("empty").hidden = sorted.length > 0;
+  saveData();
+}
+
+// Wire up controls
+const catSel = $("cat");
+CATS.forEach(([name]) => {
+  const o = document.createElement("option");
+  o.value = name;
+  o.textContent = name;
+  catSel.appendChild(o);
+});
+
+$("prev").addEventListener("click", () => {
+  const [y, m] = view.split("-").map(Number);
+  setMonth(monthKey(new Date(y, m - 2, 1)));
+});
+$("next").addEventListener("click", () => {
+  const [y, m] = view.split("-").map(Number);
+  setMonth(monthKey(new Date(y, m, 1)));
+});
+$("month").addEventListener("change", e => { if (e.target.value) setMonth(e.target.value); });
+$("budget").addEventListener("input", () => {
+  data(view).budget = Math.max(0, parseFloat($("budget").value) || 0);
+  render();
+});
+$("sym").addEventListener("input", render);
+
+function addExpense() {
+  const amt = parseFloat($("amount").value);
+  if (!(amt > 0)) {
+    $("addMsg").textContent = "Enter an amount greater than zero.";
+    $("amount").focus();
+    return;
+  }
+  const date = $("date").value || todayStr();
+  const k = date.slice(0, 7);
+  data(k).expenses.push({
+    id: nextId++,
+    amount: Math.round(amt * 100) / 100,
+    category: catSel.value,
+    note: $("note").value.trim(),
+    date: date
+  });
+  $("amount").value = "";
+  $("note").value = "";
+  if (k !== view) {
+    setMonth(k);
+  } else {
+    render();
+  }
+  $("addMsg").textContent = "Added " + money(amt) + " to " + k + ".";
+  $("amount").focus();
+}
+$("addBtn").addEventListener("click", addExpense);
+["amount", "note"].forEach(id => $(id).addEventListener("keydown", e => {
+  if (e.key === "Enter") { e.preventDefault(); addExpense(); }
+}));
+
+loadSaved();
+setMonth(view);
+</script>
+</body>
+</html>
